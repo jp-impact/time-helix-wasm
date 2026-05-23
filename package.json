@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "asc src/index.ts --outFile three.wasm --optimize",
     "build2": "tsc -b && vite build",
-    "start": "npx serve ."
+    "start": "npx serve .",
     "preview": "vite preview"
   },
   "dependencies": {
