@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "asc src/index.ts --outFile three.wasm --optimize",
-    "build2": "tsc -b && vite build",
+    "build:wasm": "asc src/index.ts --outFile three.wasm --optimize",
+    "build": "tsc -b && vite build",
     "start": "npx serve .",
     "preview": "vite preview"
   },
