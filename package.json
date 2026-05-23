@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "asc src/index.ts --outFile three.wasm --optimize",
+    "build2": "tsc -b && vite build",
+    "start": "npx serve ."
     "preview": "vite preview"
   },
   "dependencies": {
@@ -22,6 +24,7 @@
     "typescript": "~5.8.3",
     "@types/three": "^0.181.0",
     "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6"
+    "@types/react-dom": "^19.1.6",
+    "assemblyscript": "^0.28.12"
   }
 }
